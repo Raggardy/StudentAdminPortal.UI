@@ -10,8 +10,8 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete'
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
+
+
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSliderModule } from '@angular/material/slider';
@@ -52,12 +52,16 @@ import { TopNavComponent } from './layout/top-nav/top-nav.component';
 
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { ViewStudentComponent } from './students/view-student/view-student.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopNavComponent,
-    StudentsComponent
+    StudentsComponent,
+    ViewStudentComponent
   ],
   imports: [
     FormsModule,
@@ -68,8 +72,7 @@ import { FormsModule } from '@angular/forms';
     MatCheckboxModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatFormFieldModule,
-    MatInputModule,
+
     MatRadioModule,
     MatSelectModule,
     MatSliderModule,
@@ -100,7 +103,10 @@ import { FormsModule } from '@angular/forms';
     MatPaginatorModule,
     MatSortModule,
     MatTableModule,
-    HttpClientModule
+    HttpClientModule,
+    MatFormFieldModule,
+    MatInputModule
+
   ],
   schemas:[
     CUSTOM_ELEMENTS_SCHEMA
